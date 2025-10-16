@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Pangolin&display=swap');
+:root {
+    --cor-principal: #F7F4EA;
+    --cor-destaque: #763932;
+    --cor-secundaria: #E1B382;
+    --cor-texto: #2C2C2C;
+
+    --fonte-titulo: 'Pangolin', serif;
+    --fonte-texto: 'Open Sans', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--cor-destaque);
+    font-family: var(--fonte-texto);
+    color: var(--cor-texto);
+    line-height: 1.6;
+}
+
+.header {
+    background-color: var(--cor-principal);
+    padding: 15px;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-top: 15px;
+    border-radius: 30px;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-img {
+    width: 90px;
+    height: auto;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-menu a {
+    color: var(--cor-destaque);
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.nav-menu a:hover {
+    text-decoration: underline;
+}
+
+/* HERO */
+.hero {
+    position: relative;
+    text-align: left;
+    color: var(--cor-principal);
+    border: 0px;
+}
+
+.hero-img {
+    width: 100%;
+    height: auto;
+}
+
+.hero-texto {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+}
+
+.hero-texto h1 {
+    font-family: var(--fonte-titulo);
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero-texto h2 {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.botao {
+    border: 2px solid var(--cor-principal);
+    color: var(--cor-principal);
+    padding: 0.8rem 1.5rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.botao:hover {
+    background-color: var(--cor-principal);
+    color: var(--cor-destaque);
+}
+
+.destaques {
+    text-align: center;
+    padding: 3rem 0;
+    border: 0px;
+}
+
+.destaques p{
+    color: var(--cor-texto)
+}
+
+.titulo-secao {
+    font-family: var(--fonte-titulo);
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: var(--cor-principal);
+}
+
+.cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.card {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 300px;
+    padding: 1rem;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+
+.card h3 {
+    color: var(--cor-destaque);
+    margin-bottom: 0.5rem;
+}
+
+
+.footer {
+    background-color: var(--cor-destaque);
+    color: var(--cor-principal);
+    text-align: center;
+    padding: 1rem;
+    margin-top: 3rem;
+}
+
+@media (max-width: 768px) {
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-texto h1 {
+        font-size: 2rem;
+    }
+}
+
+section{
+    border: 2px solid var(--cor-principal);
+   border-radius: 30px;
+   padding: 15px;
+   padding-left: 30px;    
+   margin: 15px;
+    vertical-align: top;
+}
+
+section h1{
+    color: white;
+    font-family: var(--fonte-titulo);
+}
+section h2{
+     color: white;
+    font-family: var(--fonte-titulo);
+}
+
+
+section p{
+    font-family: var(--fonte-texto);
+    color: var(--cor-principal);
+}
+
+.contato{
+    width: 500px;
+    height: 170px;
+    display: inline-block
+
+}
+
+.endereco{
+    width: 610px;
+    height: 170px;
+    display: inline-block
+}
+
+.endereco p{
+    color: var(--cor-principal);
+}
+
+.bebidas{
+    border: 2px solid var(--cor-principal);
+    border-radius: 30px;
+    padding: 50px;
+    background-color: var(--cor-principal);
+}
+
+.sem-borda{
+    border: 0px;
+}
+
+.itemBebida{
+    color: var(--cor-destaque);
+    font-family: var(--fonte-titulo);
+    font-size: 30px;
+    margin-bottom: 15px;
+    border-radius: 30px;
+    border: 2px solid var(--cor-destaque);
+    padding: 50px;
+    list-style-position: inside;
+    
+}
+
+.itemBebida:hover{
+    background-color: var(--cor-destaque);
+    color: var(--cor-principal);
+     transition: 0.3s;
+
+}
+
+table{
+    border: 2px solid var(--cor-principal);
+    border-radius: 30px;
+    padding: 50px;
+    background-color: var(--cor-principal);
+    width: 100%;
+}
+
+tr{
+    text-align: left;
+    color: var(--cor-destaque);
+    font-family: var(--fonte-titulo);
+    font-size: 30px;
+    margin-bottom: 15px;
+    border-radius: 30px;
+    border: 2px solid var(--cor-destaque);
+    padding: 50px;
+}
+
+td{
+    padding-left: 50px;
+    text-align: left;
+}
+
+th{
+     padding-left: 50px;
+}
+
+td:hover{
+color: var(--cor-principal);
+background-color: var(--cor-destaque);
+border-radius: 15px;
+}
