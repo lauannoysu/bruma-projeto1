@@ -194,7 +194,7 @@ Otimizar imagens para melhorar o desempenho.
 O projeto Bruma Cafeteria representa visualmente uma marca fictícia de cafeteria, com foco em elegância, experiência do usuário e identidade visual marcante.
 Desenvolvido com HTML5 e CSS3, o site cumpre seu papel de apresentar os produtos e essência da marca de forma clara e atraente.
 
-👨‍💻 Autores 
+## 👨‍💻 Autores 
 Lauan Gonçalves – Estrutura e Acessibilidade** (HTML, semântica)
 Thiago Cardozo – Layout e Componentes** (Flex, cards, botões)
 Emily Raquel – Estilo e Documentação** (Paleta, tipografia, README, otimização de imagens).
